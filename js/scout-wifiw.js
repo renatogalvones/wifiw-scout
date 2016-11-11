@@ -1,11 +1,11 @@
-  var temp = seasons['2015/2016'].championships.brasileirao2015;
-  seasons = {};
+  // var temp = seasons['2015/2016'].championships.brasileirao2015;
+  // seasons = {};
 
-  seasons['2015/2016'] = {
-    championships: {
-      brasileirao2015: temp
-    }
-  }
+  // seasons['2015/2016'] = {
+  //   championships: {
+  //     brasileirao2015: temp
+  //   }
+  // }
 
   var WIFIW = (function(seasons){
       var scout = {};
@@ -81,7 +81,7 @@
               };
           }
           if(officialName === ''){
-            console.log('DEU BOSTA', champObj, nameCoach);
+            // console.log('DEU BOSTA', champObj, nameCoach);
           };
 
           return officialName;
@@ -105,7 +105,7 @@
                   scout[coach].resume.goalsAgainst += parseInt(scout[coach].seasons[season][champ].games[game].rivalGoals);
 
                   var rivalName = teamToCoach(scout[coach].seasons[season][champ],scout[coach].seasons[season][champ].games[game].rivalTeam);
-                  if(rivalName == ''){ console.log(scout[coach].seasons[season][champ],scout[coach].seasons[season][champ].games[game].rivalTeam) }
+                  // if(rivalName == ''){ console.log(scout[coach].seasons[season][champ],scout[coach].seasons[season][champ].games[game].rivalTeam) }
                   // console.log(scout[coach].seasons[season].championships[champ], scout[coach].seasons[season].championships[champ].games[game],scout[coach].seasons[season])
                   var gameResult = defineResult(rivalName, scout[coach].seasons[season][champ].games[game],scout[coach]);
 
@@ -149,7 +149,7 @@
       var init = function(){
         parseSeasons();
         makeStats();
-        console.log(scout)
+        // console.log(scout)
       }
 
       return init();
